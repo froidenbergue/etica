@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: white;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+.corpo{
+    background: rgb(27, 27, 27);
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+p, h5{
+    margin: 0 150px;
+    text-align: justify;
+}
+
+.back{
+    display: flex;
+    height: 250px; 
+    background: black;
+    margin-bottom: 30px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.titulo{
+    margin-left: 28%;
+    font-size: 50px; 
+}
+
+.tituloa{
+    color: white;
+    text-decoration: none;
+}
+
+.botoess{
+    display: flex; 
+    color: white;
+    font-size: 18px;
+    justify-content: space-around;
+}
+
+.opcoes:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+    justify-content: center;
+}
+
+.rodape{
+    background: rgb(27, 27, 27);
+    margin-top: 30px; 
+    padding: 20px 0; 
+    display: flex;
+    justify-content: end;
+}
