@@ -65,3 +65,19 @@ p, h5{
     display: flex;
     justify-content: end;
 }
+
+#voltarAoTopo {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    z-index: 99;
+    background: rgb(27, 27, 27);
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 80px; /* Define a largura do botão */
+    height: 80px; /* Define a altura do botão */
+    font-size: 30px; /* Ajusta o tamanho do ícone */
+    cursor: pointer;
+  }

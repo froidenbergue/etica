@@ -396,6 +396,8 @@
             </div>
         </div>
 
+        <button onclick="voltarAoTopo()" id="voltarAoTopo" title="Voltar ao Topo">&#8593;</button>
+
         <div class="rodape">   
                 <spam style="margin-right: 50px;">&copy; Todos os direitos reservados para Carlos Eduardo Froidenbergue de Oliveira</spam>
         </div>
@@ -441,6 +443,24 @@
                 div.style.display = 'none';
             });
         }
+
+
+        // Função para rolar a página de volta ao topo
+  function voltarAoTopo() {
+    document.body.scrollTop = 0; // Para navegadores Safari
+    document.documentElement.scrollTop = 0; // Para outros navegadores
+  }
+
+  // Mostrar ou ocultar o botão conforme o usuário rola a página
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("voltarAoTopo").style.display = "block";
+    } else {
+      document.getElementById("voltarAoTopo").style.display = "none";
+    }
+  }
     </script>
 </body>
 
